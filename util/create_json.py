@@ -14,7 +14,7 @@ with open("addresses.txt", "r") as file:
 
 data = []
 for i in range(100):
-    obj = {"name": names[i], "birthday": birthdays[i], "status": statuses[i], "address": addresses[i]}
+    obj = {"name": names[i].strip(), "birthday": birthdays[i].strip(), "status": statuses[i].strip(), "address": addresses[i].strip()}
     data.append(obj)
 document = {"data": data}
 
