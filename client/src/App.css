@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  border: 1px solid #d1d5da;
+  height: 50px;
+  width: 100%;
+  padding-left: 25px;
+  
+}
+
+.logo {
+  margin-top: 12.5px;
+  height: 25px;
+}
+
+.patients_table {
+  border: 1px solid black;
+  margin-top: 60px;
+}
+
+.patients_table th {
+  border: 1px solid black;
+}
+
+.patients_table td {
+  border: 1px solid black;
+}
