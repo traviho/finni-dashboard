@@ -1,8 +1,8 @@
-7990 Sierra Rd. New Rochelle, NY 10801
+7990 Sierra Rd. New Rochelle, NY 10801|101 Ivy Drive Freeport, NY 11520
 7 Border Street El Paso, TX 79930
 365 Glen Creek Ave. Sugar Land, TX 77478
 1 Honey Creek St. Meadville, PA 16335
-7818 Constitution St. Pittsford, NY 14534
+7818 Constitution St. Pittsford, NY 14534|564 North Ryan Street Whitestone, NY 11357
 99 Beech St. Kissimmee, FL 34741
 9 S. St Margarets Court Southfield, MI 48076
 570 Beech Avenue Suitland, MD 20746
@@ -13,23 +13,23 @@
 86 Prairie Avenue Norwood, MA 02062
 31 Hilltop Ave. Derby, KS 67037
 1 Brook Ave. Oshkosh, WI 54901
-421 Primrose Ave. Petersburg, VA 23803
+421 Primrose Ave. Petersburg, VA 23803|897 Illinois St. Henrico, VA 23228
 48 South Helen St. Raleigh, NC 27603
 636 Airport St. Ashtabula, OH 44004
 8198 W. Sunbeam Street Bellmore, NY 11710
 471 West Orchard Rd. Pittsfield, MA 01201
 606 Hillside St. Johnston, RI 02919
 8253 Joy Ridge Dr. Rolla, MO 65401
-584 Westport Avenue Valley Stream, NY 11580
+584 Westport Avenue Valley Stream, NY 11580|9612 Courtland Street Uniondale, NY 11553
 339 Nut Swamp St. Leesburg, VA 20175
 5 Depot Ave. Wayne, NJ 07470
 7179 Bayport Street Lithonia, GA 30038
 9 George St. Farmingdale, NY 11735
-657 Cedarwood St. West Chester, PA 19380
+657 Cedarwood St. West Chester, PA 19380|8397 Glenridge Street Perkasie, PA 18944
 230 Rocky River St. Valparaiso, IN 46383
 37 Shadow Brook Drive Paramus, NJ 07652
 42 Wilson St. West Fargo, ND 58078
-875 Annadale Avenue Adrian, MI 49221
+875 Annadale Avenue Adrian, MI 49221|589 Livingston Dr. Holland, MI 49423
 809 Second Street Davison, MI 48423
 9797 Arnold St. Crofton, MD 21114
 69 Sutor St. Liverpool, NY 13090
@@ -37,7 +37,7 @@
 7200 Highland Lane Mount Holly, NJ 08060
 7192 Van Dyke Rd. New Castle, PA 16101
 11 Eagle Street Bountiful, UT 84010
-62 Church Avenue Vernon Rockville, CT 06066
+62 Church Avenue Vernon Rockville, CT 06066|165 Tunnel Dr. New Milford, CT 06776
 330B Beacon Dr. East Elmhurst, NY 11369
 961 Lake Forest St. Hillsboro, OR 97124
 35 Indian Summer Drive Council Bluffs, IA 51501
@@ -57,24 +57,24 @@
 94 Hartford St. Saint Louis, MO 63109
 272 North Summer Road Hartford, CT 06106
 62 Theatre Dr. Tucson, AZ 85718
-333 Arrowhead St. Raeford, NC 28376
+333 Arrowhead St. Raeford, NC 28376|44 Cypress St. Indian Trail, NC 28079
 682 Nicolls Ave. Oak Creek, WI 53154
 7 Trusel Street Randolph, MA 02368
 900 Tunnel Ave. Baltimore, MD 21206
-13 Evergreen St. Upland, CA 91784
+13 Evergreen St. Upland, CA 91784|965 West Market Street Santa Monica, CA 90403
 9233 SW. New Avenue Sacramento, CA 95820
 8187 Grove Dr. Fitchburg, MA 01420
 853 South Newcastle St. Burnsville, MN 55337
 2 SW. Valley St. Findlay, OH 45840
 7642 Swanson Dr. Sevierville, TN 37876
 906 Woodside St. Reisterstown, MD 21136
-9351 Essex Lane Amsterdam, NY 12010
+9351 Essex Lane Amsterdam, NY 12010|353 Pleasant St. Saint Albans, NY 11412
 8182 Williams St. Mobile, AL 36605
 9556 E. Lakeview Ave. Simpsonville, SC 29680
-85 Hanover Dr. Jonesboro, GA 30236
+85 Hanover Dr. Jonesboro, GA 30236|8332 Gulf Ave. Griffin, GA 30223
 27 Homewood Street Madison Heights, MI 48071
 9181 N. Sheffield St. Neptune, NJ 07753
-515 New Saddle St. Billings, MT 59101
+515 New Saddle St. Billings, MT 59101|67 North New Ave. Kalispell, MT 59901
 467 Warren St. Harrisburg, PA 17109
 32 Hilldale Ave. Dayton, OH 45420
 4 NW. Young St. Severn, MD 21144
@@ -89,12 +89,12 @@
 640 Buckingham Drive Ridgefield, CT 06877
 9408 Carriage Avenue Mcdonough, GA 30252
 234 Mayfield Ave. Rapid City, SD 57701
-329 Gregory Street Sheboygan, WI 53081
+329 Gregory Street Sheboygan, WI 53081|950 East High Street Milwaukee, WI 53204
 7503 Lafayette St. Cedar Falls, IA 50613
 66 W. Longfellow Rd. Reidsville, NC 27320
-233 1st Rd. Fleming Island, FL 32003
+233 1st Rd. Fleming Island, FL 32003|79 Glenholme Dr. Boca Raton, FL 33428
 9495 Lookout Drive Hanover, PA 17331
 9277 Amerige Court Indian Trail, NC 28079
 135 Meadow Ave. Crown Point, IN 46307
 87 South Sunbeam Street Maspeth, NY 11378
-401 Ivy St. Newtown, PA 18940
+401 Ivy St. Newtown, PA 18940|43 Pawnee Lane Gettysburg, PA 17325
