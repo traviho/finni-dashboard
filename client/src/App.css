@@ -9,6 +9,7 @@
   height: 50px;
   width: 100%;
   padding-left: 25px;
+  margin-bottom: 60px;
 }
 
 .logo {
@@ -17,8 +18,8 @@
 }
 
 .patients_table {
+  width: 800px;
   border: 1px solid black;
-  margin-top: 60px;
 }
 
 .patients_table th {
@@ -27,4 +28,8 @@
 
 .patients_table td {
   border: 1px solid black;
+}
+
+.name-search {
+  display: inline;
 }
