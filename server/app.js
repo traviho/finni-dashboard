@@ -1,7 +1,9 @@
 const express = require('express')
 const { MongoClient } = require("mongodb");
+const cors = require('cors')
 
 const app = express()
+app.use(cors())
 const port = 3000
 
 const uri = "mongodb://localhost:27017";
@@ -15,7 +17,7 @@ app.get('/data', (req, res) => {
           const patients = database.collection('patients');
           const query = { };
           const data = await patients.findOne(query);
-          console.log(data);
+          console.log("hi");
           res.send(data)
         } catch {
           console.log(console.dir)
