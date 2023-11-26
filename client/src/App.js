@@ -8,15 +8,25 @@ function App() {
   const [data, setData] = useState([])
   const [nameSearch, setNameSearch] = useState("")
 
-  useEffect(() => {
+  const getData = () => {
     const fetchData = async () => {
       const result = await axios(
         'http://localhost:3000/data',
       );
-      setData(result.data.data);
+      setData(result.data);
     };
     fetchData();
+  }
+
+  useEffect(() => {
+    getData()
   }, [])
+
+  const setProfile = () => {
+    // const newData = data + [{"name": "...", "birthday": "...", "addresses": ["..."], "status": "..."}]
+    // setData(newData)
+    console.log("Yo mom!")
+  }
 
   const getTable = () => {
     return (

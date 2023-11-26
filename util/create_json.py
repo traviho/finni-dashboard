@@ -16,7 +16,6 @@ data = []
 for i in range(100):
     obj = {"name": names[i].strip(), "birthday": birthdays[i].strip(), "status": statuses[i].strip(), "addresses": addresses[i].strip().split("|")}
     data.append(obj)
-document = {"data": data}
 
 with open("patient_data.json", "w+") as file:
-    json.dump(document, file)
+    json.dump(data, file)
