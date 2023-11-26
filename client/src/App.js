@@ -8,7 +8,7 @@ function App() {
   const [data, setData] = useState([])
   const [nameSearch, setNameSearch] = useState("")
 
-  const getData = () => {
+  useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
         'http://localhost:3000/data',
@@ -16,17 +16,7 @@ function App() {
       setData(result.data);
     };
     fetchData();
-  }
-
-  useEffect(() => {
-    getData()
   }, [])
-
-  const setProfile = () => {
-    // const newData = data + [{"name": "...", "birthday": "...", "addresses": ["..."], "status": "..."}]
-    // setData(newData)
-    console.log("Yo mom!")
-  }
 
   const getTable = () => {
     return (
@@ -43,7 +33,7 @@ function App() {
           <tbody>
             {data.filter(obj => obj["name"].toUpperCase().includes(nameSearch.toUpperCase())).map((obj, idx) => (
               <tr key={idx}>
-                <td><Link to={"client/" + idx} state={{profile: obj}}>{obj["name"]}</Link></td>
+                <td><Link to={"client/" + idx} state={{id: obj._id}}>{obj["name"]}</Link></td>
                 <td>{obj["birthday"]}</td>
                 <td>{obj["status"]}</td>
                 <td>{obj["addresses"].map((adr, idx) => <p key={idx} style={{margin:0}}>{adr}</p>)}</td>

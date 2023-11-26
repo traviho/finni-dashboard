@@ -10,11 +10,23 @@ import axios from 'axios'
 
 
 export default function Profile() {
-    const location = useLocation()
-    const [profile, setProfile] = useState(location.state.profile)
+    const location = useLocation();
+    const [profile, setProfile] = useState({})
+    const id = location.state.id;
+
+    useEffect(() => {
+        const fetchData = async () => {
+            console.log(id)
+            const result = await axios.get(
+              'http://localhost:3000/patient', {params: {id: id}}
+            );
+            setProfile(result.data);
+          };
+          fetchData();
+    }, [id])
     
     console.log(profile)
-    return (
+    return Object.keys(profile).length === 0 ? <div /> : (
         <div>
             <Navbar />
             <div className="profile-container">

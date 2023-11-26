@@ -26,6 +26,23 @@ app.get('/data', (req, res) => {
       run()
 });
 
+app.get('/patient', (req, res) => {
+  async function run() {
+      try {
+        const id = req.query.id
+        const database = client.db('patient_db');
+        const patients = database.collection('patients2');
+        const query = { _id: new ObjectId(id) };
+        const data = await patients.findOne(query);
+        console.log("retrieving profile");
+        res.send(data)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    run()
+});
+
 app.post('/updateClient', (req, res) => {
   async function run() {
     try {
