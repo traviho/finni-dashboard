@@ -33,7 +33,7 @@ function App() {
           <tbody>
             {data.filter(obj => obj["name"].toUpperCase().includes(nameSearch.toUpperCase())).map((obj, idx) => (
               <tr key={idx}>
-                <td><Link to={"client/" + idx} state={{id: obj._id}}>{obj["name"]}</Link></td>
+                <td><Link to={"client/" + obj._id} state={{id: obj._id}}>{obj["name"]}</Link></td>
                 <td>{obj["birthday"]}</td>
                 <td>{obj["status"]}</td>
                 <td>{obj["addresses"].map((adr, idx) => <p key={idx} style={{margin:0}}>{adr}</p>)}</td>

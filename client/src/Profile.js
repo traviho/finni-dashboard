@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import './App.css';
 import Navbar from "./Navbar";
@@ -8,11 +8,10 @@ import info_icon from './info.png'
 import hourse_icon from './house.png'
 import axios from 'axios'
 
-
 export default function Profile() {
     const location = useLocation();
     const [profile, setProfile] = useState({})
-    const id = location.state.id;
+    const id = location.pathname.split("/")[2];
 
     useEffect(() => {
         const fetchData = async () => {
@@ -55,7 +54,7 @@ export default function Profile() {
                         <p className="profile-field">{entry[1]}</p>
                     </div>
                 ))}
-                <button onClick={() => axios.post("http://localhost:3000/updateClient").then(res => setProfile({...profile}))}>Add a field</button>
+                <button className="edit-profile"><Link to={"edit"} state={{profile}}>Edit Profile</Link></button>
             </div>
         </div>
     )

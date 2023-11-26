@@ -4,6 +4,8 @@ const cors = require('cors')
 
 const app = express()
 app.use(cors())
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 const port = 3000
 
 const uri = "mongodb://localhost:27017";
@@ -44,20 +46,22 @@ app.get('/patient', (req, res) => {
 });
 
 app.post('/updateClient', (req, res) => {
+  console.log(req.body.profile)
   async function run() {
     try {
+      const profile = req.body.profile;
       const database = client.db('patient_db');
       const patients = database.collection('patients2');
-      const filter = { _id: new ObjectId("656279c0436f7e100df53385") };
+      const id = profile._id;
+      delete profile._id;
+      const filter = { _id: new ObjectId(id) };
       var patient = await patients.findOne(filter)
-      patient["Phone Number"] = "1-307-577-5888"
       const updateDoc = {
         $set: {
-          "Phone Number": Math.floor(Math.random() * 88888888888) + 11111111111
+          ...profile
         },
       };
-      console.log("update");
-      console.log(patient)
+      console.log("updating...");
       const result = await patients.updateOne(filter, updateDoc);
       console.log(result)
       res.send(result)

@@ -51,3 +51,30 @@
 .profile-container li {
   list-style-type: none;
 }
+
+.edit-profile a {
+  text-decoration: none;
+  color: black;
+}
+
+.edit-form {
+  margin-left: 50px;
+}
+
+.edit-form-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.edit-form-input {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+
+.edit-form-input-2 {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
