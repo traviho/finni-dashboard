@@ -12,6 +12,7 @@ export default function Profile() {
     const location = useLocation();
     const [profile, setProfile] = useState({})
     const id = location.pathname.split("/")[2];
+    console.log(profile)
 
     useEffect(() => {
         const fetchData = async () => {
@@ -24,7 +25,6 @@ export default function Profile() {
           fetchData();
     }, [id])
     
-    console.log(profile)
     return Object.keys(profile).length === 0 ? <div /> : (
         <div>
             <Navbar />
@@ -46,14 +46,12 @@ export default function Profile() {
                 
 
                 <h3 style={{marginTop: 30}}>Additional Information</h3>
-                {Object.entries(profile).filter(entry => (
-                    entry[0] !== "_id" && entry[0] !== "name" && entry[0] !== "birthday" && entry[0] !== "status" && entry[0] !== "addresses"
-                )).map(entry => (
+                {('additional_information' in profile) ? profile.additional_information.map(obj => Object.entries(obj).map(entry => (
                     <div>
                         <strong>{entry[0]}</strong>
                         <p className="profile-field">{entry[1]}</p>
                     </div>
-                ))}
+                ))) : <></>}
                 <button className="edit-profile"><Link to={"edit"} state={{profile}}>Edit Profile</Link></button>
             </div>
         </div>

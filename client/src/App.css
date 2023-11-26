@@ -52,6 +52,10 @@
   list-style-type: none;
 }
 
+.edit-profile {
+  margin-bottom: 10px;
+}
+
 .edit-profile a {
   text-decoration: none;
   color: black;
@@ -59,6 +63,7 @@
 
 .edit-form {
   margin-left: 50px;
+  margin-bottom: 10px;
 }
 
 .edit-form-label {
@@ -72,9 +77,24 @@
   font-size: 14px;
 }
 
-
 .edit-form-input-2 {
   display: block;
   font-size: 14px;
   margin-bottom: 5px;
+}
+
+.edit-form-input-3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.add-field-button {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.delete-field {
+  height: 10px;
+  margin-left: 10px;
+  cursor: pointer;
 }
