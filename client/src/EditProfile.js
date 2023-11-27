@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Navbar from "./Navbar";
 import axios from "axios";
 import close from "./close.png"
+import plus from "./plus.png"
 
 
 export default function EditProfile() {
@@ -34,6 +35,24 @@ export default function EditProfile() {
     const editAddress = (idx, address) => {
         const newAddresses = profile.addresses;
         newAddresses[idx] = address
+        setProfile({
+            ...profile,
+            addresses: newAddresses
+        });
+    }
+
+    const addAddress = () => {
+        const newAddresses = profile.addresses;
+        newAddresses.push("")
+        setProfile({
+            ...profile,
+            addresses: newAddresses
+        });
+    }
+
+    const deleteAddress = (idx) => {
+        const newAddresses = profile.addresses;
+        newAddresses.splice(idx, 1)
         setProfile({
             ...profile,
             addresses: newAddresses
@@ -90,10 +109,13 @@ export default function EditProfile() {
                     <strong className="edit-form-label">Status</strong>
                     <input className="edit-form-input" type="text" value={profile.status} onChange={event => editStatus(event.target.value)}/>
 
-                    <strong className="edit-form-label">Addresses</strong>
+                    <strong className="edit-form-label">Addresses<img src={plus} style={{height: 10, marginLeft: 8}} onClick={() => addAddress()} /></strong>
                     <div style={{marginBottom: '30px'}}>
                         {profile.addresses.map((adr, idx) => (
-                            <input key={idx} className="edit-form-input-2" type="text" value={adr} onChange={event => editAddress(idx, event.target.value)} />
+                            <div>
+                                <input key={idx} className="edit-form-input-2" type="text" value={adr} onChange={event => editAddress(idx, event.target.value)} />
+                                <img src={close} className="delete-field" onClick={() => deleteAddress(idx)} />
+                            </div>
                         ))}
                     </div>
 

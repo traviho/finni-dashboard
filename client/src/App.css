@@ -32,6 +32,7 @@
 
 .name-search {
   display: inline;
+  margin-bottom: 5px;
 }
 
 .profile-container {
@@ -78,7 +79,6 @@
 }
 
 .edit-form-input-2 {
-  display: block;
   font-size: 14px;
   margin-bottom: 5px;
 }
